@@ -9,7 +9,10 @@ import os
 import errno
 import os.path as op
 import stat
-import purkinje.util as sut
+import flotsam.util as sut
+from flotsam.pytest_util import unique_filename
+
+_ = unique_filename
 
 
 @pytest.fixture()
