@@ -12,6 +12,9 @@ def pretty_dict(dic):
     items = []
     keys = sorted(dic.keys())
     for key in keys:
-        item_str = '{}: {}'.format(key, dic[key])
+        val = dic[key]
+        if isinstance(val, dict):
+            val = pretty_dict(val)
+        item_str = '{}: {}'.format(key, val)
         items.append(item_str)
-    return ', '.join(items)
+    return '{' + ', '.join(items) + '}'
