@@ -5,9 +5,23 @@
 
 def pretty_dict(dic):
     """Printable string representation of a dictionary
-       - items are listed in alphabetical order of their keys,
-         to ensure a deterministic representation
-         (e.g. for unit tests)
+
+       Items are listed in alphabetical order of their keys,
+       to ensure a deterministic representation
+       (e.g. for unit tests)
+
+       Examples:
+
+       >>> pretty_dict({1: 2, 3: 4})
+       '{1: 2, 3: 4}'
+
+       >>> pretty_dict({'one': 'two', 'three': 'four'})
+       '{one: two, three: four}'
+
+       Recursive dictionaries are supported, too:
+
+       >>> pretty_dict({1: 2, 3: {4: 5, 6: 7}})
+       '{1: 2, 3: {4: 5, 6: 7}}'
     """
     items = []
     keys = sorted(dic.keys())
