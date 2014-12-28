@@ -9,7 +9,7 @@ import os
 import errno
 import os.path as op
 import stat
-import flotsam.util as sut
+import flotsam.file_util as sut
 from flotsam.pytest_util import unique_filename
 
 _ = unique_filename
