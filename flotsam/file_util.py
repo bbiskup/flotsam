@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Miscellaneous utilities"""
+"""Miscellaneous utilities related to files an directories"""
 from __future__ import print_function
 
 import os
