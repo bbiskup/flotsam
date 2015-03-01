@@ -26,12 +26,12 @@ class Tox(TestCommand):
         sys.exit(errcode)
 
 setup(name='flotsam',
-      version='0.1.0',
+      version='0.1.1',
       description='Miscellaneous utilities',
       long_description=readme + '\n\n' + history,
       author='Bernhard (Bernd) Biskup',
       author_email='bbiskup@gmx.de',
-      url='biskup-software.de',
+      url='https://github.com/bbiskup',
       package_dir={'flotsam': 'flotsam'},
       packages=['flotsam'],
       zip_safe=False,
