@@ -1,5 +1,6 @@
 import sys
-from setuptools import setup
+# from setuptools import setup
+from distutils.core import setup
 from setuptools.command.test import test as TestCommand
 
 readme = open('README.rst').read()
@@ -36,7 +37,7 @@ setup(name='flotsam',
       zip_safe=False,
       include_package_data=True,
       install_requires=parse_requirements(),
-      classifiers={
+      classifiers=[
           'Development Status :: 2 - Pre-Alpha',
           'Environment :: Console',
           'Intended Audience :: Developers',
@@ -44,7 +45,7 @@ setup(name='flotsam',
           'License :: OSI Approved :: MIT License',
           'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3.4',
-      },
+      ],
       license='The MIT License (MIT)',
       keywords='flotsam utilities',
       tests_require=['tox'],
