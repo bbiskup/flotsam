@@ -60,21 +60,21 @@ def test_ensure_dir_existing(unique_filename, tmpdir):
     assert op.exists(path)
 
 
-def test_ensure_deleted_nonexistent_file(tmpdir):
+def test_ensure_del_missing_file(tmpdir):
     filename = op.join(str(tmpdir), '__NONEXISTANT')
     sut.ensure_deleted(filename)
     assert not op.exists(filename)
 
 
-def test_ensure_deleted_nonexistent_dir(tmpdir):
+def test_ensure_del_missing_dir(tmpdir):
     dirname = str(tmpdir)
     sut.ensure_deleted(dirname)
     assert not op.exists(dirname)
 
 
-def test_ensure_deleted_existent_file(existent_empty_file):
+def test_ensure_del_ex_file(existent_empty_file):
     sut.ensure_deleted(existent_empty_file)
 
 
-def test_ensure_deleted_existent_dir(tmpdir):
+def test_ensure_del_ex_dir(tmpdir):
     sut.ensure_deleted(str(tmpdir))

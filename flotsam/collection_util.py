@@ -29,6 +29,6 @@ def pretty_dict(dic):
         val = dic[key]
         if isinstance(val, dict):
             val = pretty_dict(val)
-        item_str = '{}: {}'.format(key, val)
+        item_str = '{0}: {1}'.format(key, val)
         items.append(item_str)
     return '{' + ', '.join(items) + '}'
