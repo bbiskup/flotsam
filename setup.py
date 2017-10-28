@@ -1,6 +1,6 @@
 import sys
-# from setuptools import setup
-from distutils.core import setup
+from setuptools import setup
+#from distutils.core import setup
 from setuptools.command.test import test as TestCommand
 
 readme = open('README.rst').read()
@@ -27,7 +27,7 @@ class Tox(TestCommand):
 
 
 setup(name='flotsam',
-      version='0.1.1',
+      version='0.1.2',
       description='Miscellaneous utilities',
       long_description=readme + '\n\n' + history,
       author='Bernhard (Bernd) Biskup',
