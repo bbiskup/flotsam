@@ -25,6 +25,7 @@ class Tox(TestCommand):
         errcode = tox.cmdline(self.test_args)
         sys.exit(errcode)
 
+
 setup(name='flotsam',
       version='0.1.1',
       description='Miscellaneous utilities',
@@ -44,7 +45,7 @@ setup(name='flotsam',
           # Topic :: Software Development :: Libraries :: Python Modules',
           'License :: OSI Approved :: MIT License',
           'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
       ],
       license='The MIT License (MIT)',
       keywords='flotsam utilities',
