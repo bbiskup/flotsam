@@ -1,6 +1,5 @@
 import sys
 from setuptools import setup
-#from distutils.core import setup
 from setuptools.command.test import test as TestCommand
 
 readme = open('README.rst').read()
